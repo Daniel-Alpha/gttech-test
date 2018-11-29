@@ -1,0 +1,7 @@
+
+let justIn = document.querySelectorAll("h3");
+let newScrape = {};
+for (let count = 0; count<justIn.length; count++){
+   newScrape[count] = justIn[count].textContent;
+}
+document.write(JSON.stringify(newScrape));

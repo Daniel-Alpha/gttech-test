@@ -1,0 +1,7 @@
+
+let trending = document.querySelectorAll("h1");
+let trendingNews = {};
+for (let count1 = 0; count1<trending.length; count1++){
+    trendingNews[count1] = trending[count1].textContent;
+}
+document.write(JSON.stringify(trendingNews));
